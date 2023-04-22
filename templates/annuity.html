@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="static/styles.css" />
+    <title>Ипотечный калькулятор</title>
+  </head>
+  <body>
+    <h1 class="title">Ипотечный калькулятор</h1>
+    <main class="main">
+      <form class="form" action="" method="post">
+        <label class="form__label" for="mortgage_amount">Размер ипотеки</label>
+        <input class="form__input" type="number" name="mortgage_amount" />
+        <label class="form__label" for="first_pay">Первоначальный взнос</label>
+        <input class="form__input" type="number" name="first_pay" />
+        <label class="form__label" for="mortgage_duration">Период в годах</label>
+        <input class="form__input" type="number" name="mortgage_duration" />
+        <label class="form__label" for="interest_rate">процентная ставка</label>
+        <input class="form__input" type="number" name="interest_rate" />
+        <input class="form__input" type="submit" value="Рассчитать" />
+      </form>
+      <p class="payment">Сумма ежемесечного платежа:{{result}} рублей</p>
+    </main>
+  </body>
+</html>
